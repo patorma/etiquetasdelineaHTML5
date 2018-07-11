@@ -14,13 +14,16 @@
             color:green;
         }
 
-        kbd {
+        kbd, p code {
             background: #eee;/* es un color gris casi blanco*/
             border: 1px solid #ddd;
             line-height: 1.5;
             padding: 0 .5em;
             display: inline-block;/*se mantiene como linea pero hereda de block*/
             border-radius: 4px;
+        }
+        p code {
+            background: pink;
         }
     </style>
     <title>Etiquetas semánticas de texto</title>
@@ -63,5 +66,17 @@
             <kbd></kbd> muestra atajos de teclado
         -->
         <p>Para abrir un archivo presionar <kbd>CTRL</kbd> <kbd>O</kbd></p>
+        <!--Un ejemplo con código javascript-->
+        <p>Las funciones se definen con la palabra <code>function</code>. Ejemplo de una
+        función en javascript: </p>
+    <pre>
+         <code>
+function(){
+  console.log("Hola mundo");
+ }             
+         </code>
+    </pre>
+        <!--pre es preformateado , se le indica al navegador que esta formateado y que se 
+        muestra como esta el texto-->
 </body>
 </html>
