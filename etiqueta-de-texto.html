@@ -13,6 +13,15 @@
         sub {
             color:green;
         }
+
+        kbd {
+            background: #eee;/* es un color gris casi blanco*/
+            border: 1px solid #ddd;
+            line-height: 1.5;
+            padding: 0 .5em;
+            display: inline-block;/*se mantiene como linea pero hereda de block*/
+            border-radius: 4px;
+        }
     </style>
     <title>Etiquetas semánticas de texto</title>
 </head>
@@ -46,5 +55,13 @@
      <p>
          Estudiar para el lunes, de la página <mark>100 hasta la 200</mark>
      </p>
+
+     <!--Etiquetas de línea
+       2. Etiquetas de código
+       <code></code> para resaltar código
+        <var> para indicar una variable
+            <kbd></kbd> muestra atajos de teclado
+        -->
+        <p>Para abrir un archivo presionar <kbd>CTRL</kbd> <kbd>O</kbd></p>
 </body>
 </html>
