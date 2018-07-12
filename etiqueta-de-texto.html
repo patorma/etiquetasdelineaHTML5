@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,67 +9,95 @@
     texto y de los microdatos">
     <style>
         sup {
-            color:red;
-        }
-        sub {
-            color:green;
+            color: red;
         }
 
-        kbd, p code {
-            background: #eee;/* es un color gris casi blanco*/
+        sub {
+            color: green;
+        }
+
+        kbd,
+        p code {
+            background: #eee;
+            /* es un color gris casi blanco*/
             border: 1px solid #ddd;
             line-height: 1.5;
             padding: 0 .5em;
-            display: inline-block;/*se mantiene como linea pero hereda de block*/
+            display: inline-block;
+            /*se mantiene como linea pero hereda de block*/
             border-radius: 4px;
         }
+
         p code {
             background: pink;
+        }
+
+        .poema{
+            text-align: center;
+            color: #555;
+            font-size: 1.4em;
+            line-height: 1.7;
+            font-family: Georgia;
         }
     </style>
     <title>Etiquetas semánticas de texto</title>
 </head>
+
 <body>
     <!--Los elemntos de linea, como son de texto,generalmente van dentro de parrafos
     o elementos mayores -->
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit excepturi doloremque
-     a eaque rem deserunt.<strong>Similique</strong> laborum rerum voluptatum quasi sapiente, possimus 
-     molestias reprehenderit nesciunt facere eveniet voluptas velit odio?</p>
-     <a href="https://ed.team/cursos">Ir a los cursos</a>
-     <!--Etiquetas de linea
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit excepturi doloremque a eaque rem deserunt.
+        <strong>Similique</strong> laborum rerum voluptatum quasi sapiente, possimus molestias reprehenderit nesciunt facere eveniet
+        voluptas velit odio?</p>
+    <a href="https://ed.team/cursos">Ir a los cursos</a>
+    <!--Etiquetas de linea
         1.Etiquetas de formato
     -->
-     <b>Bold text</b><!--Muestra texto en negrita -->   
-     <i>Italic text</i> <!--Texto que esta inclinado(cursiva) -->
-     <u>Underline text</u><!--Mostrar contexto o subrayado --> 
-     <sup>Super indice</sup><!--Texto pequeño en la parte superior-->
-     <sub>Subindice</sub><!--Texto pequeño en la parte inferior-->
+    <b>Bold text</b>
+    <!--Muestra texto en negrita -->
+    <i>Italic text</i>
+    <!--Texto que esta inclinado(cursiva) -->
+    <u>Underline text</u>
+    <!--Mostrar contexto o subrayado -->
+    <sup>Super indice</sup>
+    <!--Texto pequeño en la parte superior-->
+    <sub>Subindice</sub>
+    <!--Texto pequeño en la parte inferior-->
 
-     <p>
-         x<sup>2</sup> + y<sup>2</sup>= z<sup>2</sup>
-     </p>
-     <p>
-         C0<sub>2</sub>
-     </p>
-     <!--<del></del> Tacha un texto y significa eliminado-->
-     <p>
-         Hoy, todos los productos a <del>$50.000</del> $35.000
-     </p>
-     <!--<mark></mark> resalta un texto e indica importancia-->
-     <p>
-         Estudiar para el lunes, de la página <mark>100 hasta la 200</mark>
-     </p>
+    <p>
+        x
+        <sup>2</sup> + y
+        <sup>2</sup>= z
+        <sup>2</sup>
+    </p>
+    <p>
+        C0
+        <sub>2</sub>
+    </p>
+    <!--<del></del> Tacha un texto y significa eliminado-->
+    <p>
+        Hoy, todos los productos a
+        <del>$50.000</del> $35.000
+    </p>
+    <!--<mark></mark> resalta un texto e indica importancia-->
+    <p>
+        Estudiar para el lunes, de la página
+        <mark>100 hasta la 200</mark>
+    </p>
 
-     <!--Etiquetas de línea
+    <!--Etiquetas de línea
        2. Etiquetas de código
        <code></code> para resaltar código
         <var> para indicar una variable
             <kbd></kbd> muestra atajos de teclado
         -->
-        <p>Para abrir un archivo presionar <kbd>CTRL</kbd> <kbd>O</kbd></p>
-        <!--Un ejemplo con código javascript-->
-        <p>Las funciones se definen con la palabra <code>function</code>. Ejemplo de una
-        función en javascript: </p>
+    <p>Para abrir un archivo presionar
+        <kbd>CTRL</kbd>
+        <kbd>O</kbd>
+    </p>
+    <!--Un ejemplo con código javascript-->
+    <p>Las funciones se definen con la palabra
+        <code>function</code>. Ejemplo de una función en javascript: </p>
     <pre>
          <code>
 function(){
@@ -76,7 +105,46 @@ function(){
  }             
          </code>
     </pre>
-        <!--pre es preformateado , se le indica al navegador que esta formateado y que se 
+    <!--pre es preformateado , se le indica al navegador que esta formateado y que se 
         muestra como esta el texto-->
+
+    <pre class="poema">
+
+    <strong>EL futuro es espacio</strong>    
+            EL futuro es espacio,
+            espacio color de tierra,
+            color de nube,
+            color de agua, de aire,
+            espacio negro para muchos sueños,
+            espacio blanco para toda la nieve,
+            para toda la música.
+            
+            Atrás quedó el amor desesperado
+            que no tenía sitio para un beso,
+            hay lugar para todos en el bosque,
+            en la calle, en la casa,
+            hay sitio subterráneo y submarino,
+            qué placer es hallar por fin,
+            subiendo
+            un planeta vacío,
+            grandes estrellas claras como el vodka
+            tan transparentes y deshabitadas,
+            y allí llegar con el primer teléfono
+            para que hablen más tarde tantos hombres
+            de sus enfermedades.
+            
+            Lo importante es apenas divisarse,
+            gritar desde una dura cordillera
+            y ver en la otra punta
+            los pies de una mujer recién llegada.
+            
+            Adelante, salgamos
+            del río sofocante
+            en que con otros peces navegamos
+            desde el alba a la noche migratoria
+            y ahora en este espacio descubierto
+            volemos a la pura soledad.
+    </pre> 
 </body>
+
 </html>
