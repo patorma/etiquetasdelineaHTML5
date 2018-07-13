@@ -39,6 +39,9 @@
             line-height: 1.7;
             font-family: Georgia;
         }
+        h2 {
+            text-align: center;
+        }
     </style>
     <title>Etiquetas semánticas de texto</title>
 </head>
@@ -109,7 +112,7 @@ function(){
         muestra como esta el texto-->
 
      <article> 
-            <h2>EL futuro es espacio</h2>         
+           <h2>EL futuro es espacio</h2>         
             <pre class="poema">
 
        
@@ -149,8 +152,20 @@ function(){
     </pre> 
 </article> 
 
-  <!--Etiquetas semánticas de texto <strong> y <em>-->
-      
+  <!--Etiquetas semánticas de texto <strong> y <em>
+    
+    <strong></strong> se usa para indicar importancia
+    <em></em> se usa para indicar enfasis 
+
+    Citas:
+    <q></q> (en linea)
+    <blockquote></blockquote> (de bloque)
+-->
+   <p>Sócrates dijo: <q><em>Solo sé que nada sé</em></q>.</p>
+   <p>Sócrates dijo:</p>
+   <blockquote>
+    <em>Solo sé que nada sé</em> <!--deja un sangrado-->
+   </blockquote>   
     
 
 </body>
